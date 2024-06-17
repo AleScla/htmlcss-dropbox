@@ -63,6 +63,12 @@ a{
     text-decoration:none;
 }
 
+.bg-white{
+    background-color:white;
+    color:black;
+    border: 1px solid black;
+}
+
 .txt-center{
     text-align:center;
 }
@@ -162,6 +168,8 @@ main{
     margin-top:50px;
 }
 
+
+
 .top-subscriptions{
     margin-bottom:30px;
 
@@ -212,6 +220,7 @@ main{
     width:100%;
     text-align:center;
     border-bottom:1px solid black;
+    padding: 10px 0;
 }
 .bottom-card{
     width:100%;
@@ -258,9 +267,26 @@ h3{
     margin-right:20px;
 }
 
-
 /*  cards abbonamenti  fine */
 
+/* sezione partners */
+.img-container{
+    width:60%;
+    height:60%;
+}
+
+section > .container-60 > .row{
+    margin-top:200px;
+}
+
+.txt-container{
+    width:40%;
+    padding: 0 0 20px 20px;
+}
+
+.txt-container >*{
+    margin-bottom:20px;
+}
 /* footer */
 
 
