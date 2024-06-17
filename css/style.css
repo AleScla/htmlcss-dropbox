@@ -15,6 +15,10 @@ img{
 }
 
 
+.grey-txt{
+    color:grey
+}
+
 
 
 /* general */
@@ -40,8 +44,8 @@ ul{
 }
 
 a{
-    text-decoration:none;
-    color:grey;
+
+    padding:5px;
 }
 
 .btn{
@@ -50,6 +54,10 @@ a{
     padding:10px 12px;
     display:inline-block;
     text-decoration:none;
+}
+
+.txt-center{
+    text-align:center;
 }
 
 /* header */
@@ -68,6 +76,9 @@ header{
 .header-top > *{
     width:50%;   
 }
+.header-top a{
+    text-decoration:none;
+}   
 
 .inner-left > *{
     display:inline-block;
@@ -151,11 +162,22 @@ main{
 
 .top-subscriptions > h2{
     padding:30px 0;
+    font-size:3rem;
 }
+
+.top-subscriptions span > i{
+    font-size:1.5rem;
+}
+
+.checked > i:first-child{
+    color:blue;
+}
+
 
 .row{
     display:flex;
     flex-wrap:wrap;
+    margin: 0 -20px;
 }
 
 .column1-3{
@@ -166,6 +188,51 @@ main{
 .column3-3{
     width:100%;
     margin-top:30px;
+}
+.card{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.top-card, .bottom-card{
+    border:1px solid black;
+}
+
+.top-card{
+    width:100%;
+    text-align:center;
+    
+}
+.bottom-card{
+    width:100%;
+}
+
+.bottom-card > p > i{
+    font-size:1.5rem;
+}
+.bottom-card > *{
+    padding-left:20px;
+}
+
+.bottom-card > *,
+.bottom-card > div > *{
+    margin-top:30px;
+}
+
+.bottom-card ul li > i{
+    color:#0061FF;
+    font-size:1.5rem;
+
+}
+.bottom-card h3{
+    font-size:2rem;
+}
+
+
+.short-hr{
+    border:1px solid gray;
+    width:20%;
+    border-radius:2px;
 }
 
 /* footer */
@@ -188,13 +255,13 @@ main{
 
 
 .debug main section > .container-60{
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     min-height:600px;
     border:1px solid black;
 
 }
 
 .debug .bottom-subscriptions *{
-    border:1px dashed black;
-    min-height:200px;
+    /* border:1px dashed black; */
+    /* min-height:10px; */
 }
