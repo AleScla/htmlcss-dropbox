@@ -19,6 +19,11 @@ img{
     color:grey
 }
 
+.flex{
+    display:flex;
+    justify-content:space-between;
+}
+
 
 
 /* general */
@@ -36,6 +41,8 @@ img{
     width:60%;
     margin:0 auto;
 }
+
+
 
 ul{
     list-style:none;
@@ -59,7 +66,9 @@ a{
 .txt-center{
     text-align:center;
 }
-
+.width-50{
+    width:50%;
+}
 /* header */
 header{
     background-color:#B4D0E7;
@@ -73,9 +82,7 @@ header{
     padding:20px 0;
 }
 
-.header-top > *{
-    width:50%;   
-}
+
 .header-top a{
     text-decoration:none;
 }   
@@ -136,7 +143,7 @@ header{
     width:100%;
     position:absolute;
     bottom:-30px;
-    left:-30px;;
+    right:-30px;;
     object-fit:contain;
     object-position:bottom;
 }
@@ -172,45 +179,52 @@ main{
 .checked > i:first-child{
     color:blue;
 }
-
+/* layout a righe e colonne per abbonamenti */
+.bottom-subscriptions{
+    margin-left:-20px;
+    margin-right:-20px;
+}
 
 .row{
     display:flex;
     flex-wrap:wrap;
-    margin: 0 -20px;
 }
 
 .column1-3{
     width:calc((100% / 3) - 40px);
     margin:20px;
+    align-items:stretch;
+    border:1px solid black;
 }
 
 .column3-3{
-    width:100%;
+    width:calc(100% - 40px);
     margin-top:30px;
-}
-.card{
-    display:flex;
-    flex-wrap:wrap;
-}
-
-.top-card, .bottom-card{
     border:1px solid black;
+    margin:auto;
+
 }
+/* layout a righe e colonne per abbonamenti fine*/
+
+/*  cards abbonamenti  */
 
 .top-card{
     width:100%;
     text-align:center;
-    
+    border-bottom:1px solid black;
 }
 .bottom-card{
     width:100%;
 }
 
+.fixed-height{
+    height: 400px;
+}
+
 .bottom-card > p > i{
     font-size:1.5rem;
 }
-.bottom-card > *{
+.bottom-card > *:not(.txt-center){
     padding-left:20px;
 }
 
@@ -218,22 +232,34 @@ main{
 .bottom-card > div > *{
     margin-top:30px;
 }
-
+.bottom-card ul li{
+    padding:10px 0;
+}
 .bottom-card ul li > i{
     color:#0061FF;
     font-size:1.5rem;
-
 }
-.bottom-card h3{
+h3{
     font-size:2rem;
 }
 
-
 .short-hr{
-    border:1px solid gray;
+    border:1px solid lightgray;
     width:20%;
     border-radius:2px;
+    margin-left:20px;
 }
+
+.bottom-card{
+    padding-bottom:20px;
+}
+
+.bottom-right-card > .btn{
+    margin-right:20px;
+}
+
+
+/*  cards abbonamenti  fine */
 
 /* footer */
 
@@ -252,16 +278,15 @@ main{
 .debug header .header-bottom{
     background-color:lime;
 } */
-
+/* 
 
 .debug main section > .container-60{
     /* background-color: lightgrey; */
-    min-height:600px;
+    /* min-height:600px;
     border:1px solid black;
 
-}
+} */
 
-.debug .bottom-subscriptions *{
+/* .debug .bottom-subscriptions *{
     /* border:1px dashed black; */
     /* min-height:10px; */
-}
