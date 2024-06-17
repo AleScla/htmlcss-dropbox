@@ -24,7 +24,12 @@ img{
 }
 
 .container-70{
-    max-width:70%;
+    width:70%;
+    margin:0 auto;
+}
+
+.container-60{
+    width:60%;
     margin:0 auto;
 }
 
@@ -135,6 +140,34 @@ span > i{
 
 /* main */
 
+main{
+    margin-top:50px;
+}
+
+.top-subscriptions{
+    margin-bottom:30px;
+
+}
+
+.top-subscriptions > h2{
+    padding:30px 0;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.column1-3{
+    width:calc((100% / 3) - 40px);
+    margin:20px;
+}
+
+.column3-3{
+    width:100%;
+    margin-top:30px;
+}
+
 /* footer */
 
 
@@ -152,3 +185,16 @@ span > i{
 .debug header .header-bottom{
     background-color:lime;
 } */
+
+
+.debug main section > .container-60{
+    background-color: lightgrey;
+    min-height:600px;
+    border:1px solid black;
+
+}
+
+.debug .bottom-subscriptions *{
+    border:1px dashed black;
+    min-height:200px;
+}
