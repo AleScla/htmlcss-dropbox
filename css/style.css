@@ -289,6 +289,23 @@ h3{
 .txt-container >*{
     margin-bottom:20px;
 }
+
+/* sezione partners-logo */
+
+.column1-3.no-margin {
+    width:calc(100% / 3);
+    margin:0;
+}
+
+.column1-2{
+    width:50%;
+}
+
+.column1-2 > img{
+    object-fit:contain;
+    height:calc(100vw / 6);
+    
+}
 /* footer */
 
 
@@ -320,7 +337,10 @@ h3{
     /* min-height:10px; */
 
 
-    /* .column1-3{
+    /* .column1-3.no-margin{
         background-color:red;
-        min-height:200px;
     } */
+
+    .column1-2{
+        border:1px solid black;
+    }
