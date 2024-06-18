@@ -15,9 +15,6 @@ img{
 }
 
 
-.grey-txt{
-    color:grey
-}
 
 .flex{
     display:flex;
@@ -43,10 +40,12 @@ img{
 }
 
 
+.grey-txt{
+    color:grey
+}
 
 ul{
     list-style:none;
-    display:inline-block;
 
 }
 
@@ -76,14 +75,54 @@ a{
     width:50%;
 }
 
+.bg-grey{
+    background-color:#F5F5F5;
+}
+
+.bg-green{
+    background-color:#A2D39B;
+    border:10px solid #D1E9CD;
+}
+
+
+.bg-dark-red{
+    background-color:#61082B
+}
+
+.bg-orange{
+    background-color: #FF1C1C;
+}
+
+.bg-torquoise{
+    background-color:#0093CE;
+}
+
+.bg-red{
+    background-color:red;
+}
+
+.bg-blue{
+    background-color:#0D2481;
+}
+
+.bg-azure{
+    background-color:#B4D0E7;
+}
+
+.bg-yellow{
+    background-color:#FFD830;
+}
+
 .brdr-bottom{
     border-bottom:1px solid black;
 }
-/* header */
-header{
-    background-color:#B4D0E7;
-    
+
+.bg-lightblue{
+    background-color:#B4D0E7
 }
+
+/* header */
+
 
 .header-top{
     background-color:white;
@@ -221,12 +260,17 @@ h2{
 .top-card{
     width:100%;
     text-align:center;
-
     padding: 10px 0;
 }
-.bottom-card{
+.bottom-card, .bottom-card-2{
     width:100%;
+    padding-bottom:20px;
 }
+
+.bottom-card-2 > *{
+    margin-bottom:20px;
+}
+
 
 .fixed-height{
     height: 400px;
@@ -235,7 +279,7 @@ h2{
 .bottom-card > p > i{
     font-size:1.5rem;
 }
-.bottom-card > *:not(.txt-center){
+.bottom-card:not(.txt-center){
     padding-left:20px;
 }
 
@@ -258,12 +302,8 @@ h3{
     border:1px solid lightgray;
     width:20%;
     border-radius:2px;
-    margin-left:20px;
 }
 
-.bottom-card{
-    padding-bottom:20px;
-}
 
 .bottom-right-card > .btn{
     margin-right:20px;
@@ -290,22 +330,66 @@ h3{
     margin-bottom:20px;
 }
 
+.main-container{
+    margin-left:-20px;
+}
+
 /* sezione partners-logo */
 
 .column1-3.no-margin {
     width:calc(100% / 3);
     margin:0;
 }
+.column1-3.no-margin{
+    height:calc(100vw / 3);
+}
 
 .column1-2{
     width:50%;
+    height:calc(100vw / 6);
+
 }
 
 .column1-2 > img{
     object-fit:contain;
-    height:calc(100vw / 6);
-    
+    object-position:center;
+    width:100%;
+    height:100%;
+    transform:scale(0.7);
+    filter:invert(1);
+
 }
+
+.no-margin.bg-grey{
+    padding: 50px;
+
+}
+
+.no-margin.bg-grey > *{
+    margin-bottom:50px;
+
+}
+
+
+section.bg-lightblue > .main-container .container-60 .row {
+    padding: 70px 0;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+#free-trial-btn{
+    border:none;
+    margin:0;
+}
+
+#purple-txt{
+    color:#61082B;
+}
+
+/* sezione FAQ */
+
+
 /* footer */
 
 
@@ -341,6 +425,6 @@ h3{
         background-color:red;
     } */
 
-    .column1-2{
+    /* .column1-2{
         border:1px solid black;
-    }
+    } */
