@@ -25,6 +25,7 @@ img{
 
 /* general */
 
+
 .container-100{
     width:100%;
 }
@@ -39,6 +40,9 @@ img{
     margin:0 auto;
 }
 
+h4{
+    font-size:1.5rem;
+}
 
 .grey-txt{
     color:grey
@@ -119,6 +123,10 @@ a{
 
 .bg-lightblue{
     background-color:#B4D0E7
+}
+
+.bg-black{
+    background-color:black;
 }
 
 /* header */
@@ -388,9 +396,67 @@ section.bg-lightblue > .main-container .container-60 .row {
 }
 
 /* sezione FAQ */
+.FAQ{
+    padding: 30px 0;
+    border-bottom:1px solid black;
+    width:100%;
+    text-decoration:none;
+    color:black;
+    display:inline-block;
+}
+
+.question{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+}
+.main-container #FAQ-title{
+    border-bottom:1px solid black;
+}
+.fa-caret-down{
+    font-size:1rem;
+}
+.answer{
+    max-height:0;
+    overflow:hidden;
+    transition:all 1s linear;
+}
+
+.FAQ:target .answer{
+    max-height:100px;
+    overflow:visible;
+    padding:20px 0;
+}
 
 
 /* footer */
+
+footer{
+    margin-top:100px;
+}
+
+.footer-top, .footer-bottom{
+    padding-top:50px;
+
+}
+
+.column1-5{
+    width:20%;
+    color:white;
+}
+
+footer .container-70 > section{
+    width:100%;
+}
+
+.column1-5 ul li > a{
+    text-decoration:none;
+    color:white;
+    padding: 10px 0;
+    display:inline-block;
+
+}
 
 
 /* debug */
@@ -428,3 +494,17 @@ section.bg-lightblue > .main-container .container-60 .row {
     /* .column1-2{
         border:1px solid black;
     } */
+
+    .debug footer{
+        min-height:300px;
+    }
+
+    .debug footer > .container-70 > section {
+        background-color:red;
+        border:1px solid white;
+    }
+
+    .debug footer > .container-70 > section > .column1-5 {
+        background-color:green;
+        border:1px solid blue;
+    }
