@@ -1,0 +1,126 @@
+/* reset */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* general */
+
+.flex{
+    display:flex;
+    justify-content:space-between;
+}
+
+.container-100{
+    width:100%;
+}
+
+.container-70{
+    width:70%;
+    margin:0 auto;
+}
+
+.container-60{
+    width:60%;
+    margin:0 auto;
+}
+
+h4{
+    font-size:1.5rem;
+}
+
+.grey-txt{
+    color:grey
+}
+
+ul{
+    list-style:none;
+
+}
+
+a{
+
+    padding:5px;
+}
+
+.btn{
+    background-color:#0061FF;
+    color:white;
+    padding:10px 12px;
+    display:inline-block;
+    text-decoration:none;
+}
+
+.bg-white{
+    background-color:white;
+    color:black;
+    border: 1px solid black;
+}
+
+.txt-center{
+    text-align:center;
+}
+.width-50{
+    width:50%;
+}
+
+.bg-grey{
+    background-color:#F5F5F5;
+}
+
+.bg-green{
+    background-color:#A2D39B;
+    border:10px solid #D1E9CD;
+}
+
+
+.bg-dark-red{
+    background-color:#61082B
+}
+
+.bg-orange{
+    background-color: #FF1C1C;
+}
+
+.bg-torquoise{
+    background-color:#0093CE;
+}
+
+.bg-red{
+    background-color:red;
+}
+
+.bg-blue{
+    background-color:#0D2481;
+}
+
+.bg-azure{
+    background-color:#B4D0E7;
+}
+
+.bg-yellow{
+    background-color:#FFD830;
+}
+
+.brdr-bottom{
+    border-bottom:1px solid black;
+}
+
+.bg-lightblue{
+    background-color:#B4D0E7
+}
+
+.bg-black{
+    background-color:black;
+}
